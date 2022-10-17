@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VET KKU</title>
+    <title>VM KKU</title>
     <link
       href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" href="./assets/logo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +21,22 @@
         scroll-behavior: smooth;
         font-family: "Kanit", sans-serif;
       }
+      .link {
+        color: rgb(104, 179, 194);
+        transition: all 0.15s;
+      }
+      .link:hover {
+        color: rgb(36, 70, 118, 1);
+      }
+      .navigator {
+        transition: all 0.15s;
+      }
+      .navigator:hover {
+        color: rgb(104, 179, 194);
+      }
+      .section-header {
+        border-color: rgb(36, 70, 118);
+      }
     </style>
   </head>
   <body>
@@ -27,19 +44,28 @@
       <div
         class="h-full container mx-auto flex items-center justify-between pr-4 lg:px-24"
       >
-        <h1 class="block sm:hidden text-lg text-blue-500 font-bold">VET KKU</h1>
+        <img
+          class="block sm:hidden w-16 mr-2"
+          src="./assets/logo.png"
+          alt="vm-kku-logo"
+        />
+        <h1
+          class="block sm:hidden text-lg font-bold"
+          style="color: rgb(36, 70, 118, 1)"
+        >
+          VM KKU
+        </h1>
         <div class="items-center hidden sm:flex">
-          <h1 class="text-lg text-blue-500 font-bold">VET KKU</h1>
+          <img class="w-16 mr-2" src="./assets/logo.png" alt="vm-kku-logo" />
+          <h1 class="text-lg font-bold" style="color: rgb(36, 70, 118, 1)">
+            VM KKU
+          </h1>
         </div>
         <div class="hidden sm:block">
-          <a
-            href="#privacyPolicy"
-            class="hover:text-blue-500 text-gray-600 mr-4"
+          <a href="#privacyPolicy" class="navigator text-gray-600 mr-4"
             >นโยบายความเป็นส่วนตัว</a
           >
-          <a
-            href="#termsAndConditions"
-            class="hover:text-blue-500 text-gray-600"
+          <a href="#termsAndConditions" class="navigator text-gray-600"
             >ข้อตกลงและเงื่อนไข</a
           >
         </div>
@@ -47,9 +73,12 @@
     </div>
 
     <div class="container mx-auto mt-10 mb-32 px-4 md:px-24">
+      <div class="flex justify-center">
+        <img src="/assets/logo.png" class="w-96 my-8" alt="vm-kku-logo" />
+      </div>
       <h1
         id="privacyPolicy"
-        class="border-l-8 border-blue-300 pl-2 md:pl-4 text-2xl text-gray-500 mt-12 mb-4"
+        class="border-l-8 section-header pl-2 md:pl-4 text-2xl text-gray-500 mt-12 mb-4"
       >
         นโยบายความเป็นส่วนตัว
       </h1>
@@ -285,15 +314,11 @@
       <p class="text-lg text-gray-600 mb-4">
         คุณอาจเลือกที่จะไม่รับตัวเลือกสุขภาพและความเป็นอยู่ทั่วไป
         หรือทางเลือกการรักษาที่อาจเกี่ยวข้องกับคุณ โดยส่งอีเมลถึงเราที่
-        <a
-          class="text-blue-600 hover:text-blue-500"
-          href="mailto: ilifecomapany@gmail.com"
+        <a class="link" href="mailto: ilifecomapany@gmail.com"
           >ilifecomapany@gmail.com</a
         >
         คุณอาจขอให้เราลบข้อมูลส่วนบุคคลของคุณโดยส่งอีเมลถึงเราที่
-        <a
-          class="text-blue-600 hover:text-blue-500"
-          href="mailto: ilifecomapany@gmail.com"
+        <a class="link" href="mailto: ilifecomapany@gmail.com"
           >ilifecomapany@gmail.com</a
         >
       </p>
@@ -368,16 +393,14 @@
       <p class="text-lg text-gray-600 mb-4">
         หากคุณมีคำถามใดๆ เกี่ยวกับนโยบายความเป็นส่วนตัวหรือแนวทางปฏิบัติของเรา
         โปรดส่งอีเมลถึงเราที่
-        <a
-          class="text-blue-600 hover:text-blue-500"
-          href="mailto: ilifecomapany@gmail.com"
+        <a class="link" href="mailto: ilifecomapany@gmail.com"
           >ilifecomapany@gmail.com</a
         >
       </p>
 
       <h1
         id="termsAndConditions"
-        class="border-l-8 border-blue-300 pl-2 md:pl-4 text-2xl text-gray-500 mb-2 mt-12"
+        class="border-l-8 section-header pl-2 md:pl-4 text-2xl text-gray-500 mb-2 mt-12"
       >
         ข้อตกลงและเงื่อนไข
       </h1>
@@ -402,10 +425,7 @@
         เราอาจเปลี่ยนแปลงข้อตกลงเหล่านี้
         หรือปรับเปลี่ยนลักษณะของบริการได้ทุกเมื่อ
         สามารถดูข้อตกลงฉบับล่าสุดได้โดยการเข้าไปในลิ้งค์ชื่อ “ข้อตกลง” ที่อยู่บน
-        <a
-          class="text-blue-600 hover:text-blue-500"
-          href="https://www.pettinee.asia"
-          target="_blank"
+        <a class="link" href="https://www.pettinee.asia" target="_blank"
           >www.pettinee.asia</a
         >
         โดยการใช้บริการดังกล่าว ท่านยอมรับข้อตกลงและความเปลี่ยนแปลงต่าง ๆ
@@ -415,9 +435,7 @@
       <h2 class="text-xl text-gray-500 mt-8 mb-4">1. ความเป็นส่วนตัว</h2>
       <p class="text-lg text-gray-600 mb-4">
         โดยการใช้บริการดังกล่าว ท่านยินยอมต่อการดำเนินการทางข้อมูลภายใต้
-        <a
-          href="#privacyPolicy"
-          class="text-blue-600 hover:text-blue-500 text-gray-600"
+        <a href="#privacyPolicy" class="link text-gray-600"
           >นโยบายความเป็นส่วนตัว</a
         >
         ของเรา
@@ -730,9 +748,7 @@
       </ol>
       <p class="text-lg text-gray-600 mb-2">
         ส่งเอกสารคำร้องของผู้ใช้ผ่าน
-        <a
-          class="text-blue-600 hover:text-blue-500"
-          href="mailto: ilifecomapany@gmail.com"
+        <a class="link" href="mailto: ilifecomapany@gmail.com"
           >ilifecomapany@gmail.com</a
         >
         แต่ละคำร้องจะถูกตัดสินใจเป็นรายกรณี
